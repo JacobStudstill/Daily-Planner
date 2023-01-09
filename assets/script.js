@@ -38,7 +38,9 @@ $("#20 .description").val(localStorage.getItem("20"));
 $("#21 .description").val(localStorage.getItem("21"));
 $("#22 .description").val(localStorage.getItem("22"));
 
-
+//Check the state of the current time and compare to each value of id which holds value of the hour
+//I had to remove the hour- from each id so I can compare a string to a number for the if statements
+//Assign the class to each id depending on if its past, present, or future
 function whatHour(){
   var currentHour = moment().hour()
   
