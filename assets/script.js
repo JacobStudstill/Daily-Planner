@@ -20,23 +20,23 @@ $(".saveBtn").on("click", function(){
 })
 
 // Get information from local storage for the corresponding hours
-$("#hour-5 .description").val(localStorage.getItem("hour-5"));
-$("#hour-6 .description").val(localStorage.getItem("hour-6"));
-$("#hour-8 .description").val(localStorage.getItem("hour-8"));
-$("#hour-9 .description").val(localStorage.getItem("hour-9"));
-$("#hour-10 .description").val(localStorage.getItem("hour-10"));
-$("#hour-11 .description").val(localStorage.getItem("hour-11"));
-$("#hour-12 .description").val(localStorage.getItem("hour-12"));
-$("#hour-13 .description").val(localStorage.getItem("hour-13"));
-$("#hour-14 .description").val(localStorage.getItem("hour-14"));
-$("#hour-15 .description").val(localStorage.getItem("hour-15"));
-$("#hour-16 .description").val(localStorage.getItem("hour-16"));
-$("#hour-17 .description").val(localStorage.getItem("hour-17"));
-$("#hour-18 .description").val(localStorage.getItem("hour-18"));
-$("#hour-19 .description").val(localStorage.getItem("hour-19"));
-$("#hour-20 .description").val(localStorage.getItem("hour-20"));
-$("#hour-21 .description").val(localStorage.getItem("hour-21"));
-$("#hour-22 .description").val(localStorage.getItem("hour-22"));
+$("#5 .description").val(localStorage.getItem("5"));
+$("#6 .description").val(localStorage.getItem("6"));
+$("#8 .description").val(localStorage.getItem("8"));
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13 .description").val(localStorage.getItem("13"));
+$("#14 .description").val(localStorage.getItem("14"));
+$("#15 .description").val(localStorage.getItem("15"));
+$("#16 .description").val(localStorage.getItem("16"));
+$("#17 .description").val(localStorage.getItem("17"));
+$("#18 .description").val(localStorage.getItem("18"));
+$("#19 .description").val(localStorage.getItem("19"));
+$("#20 .description").val(localStorage.getItem("20"));
+$("#21 .description").val(localStorage.getItem("21"));
+$("#22 .description").val(localStorage.getItem("22"));
 
 
 function whatHour(){
