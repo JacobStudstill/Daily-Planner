@@ -46,7 +46,7 @@ function whatHour(){
   
   $(".time-block").each(function() {
     var hourOfTime = $(this).attr("id");
-
+    //Log the two variables of this function to make sure they are pulling correct values
     console.log(hourOfTime);
     console.log(currentHour);
 
@@ -68,4 +68,13 @@ function whatHour(){
   });
 };
 
+//Clear the values of the planner once the hour hits 1 which would be 1:00 am the next day
+function clearValue(){
+  var resetHour = moment().hour()
+  // console.log(resetHour)
+  if(resetHour == 1) {
+    localStorage.clear();
+  }
+}
 whatHour();
+clearValue();
