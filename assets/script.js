@@ -1,13 +1,14 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-
-//Display current time in header
+//Display current time in header using dayjs()
 var today = dayjs();
-$('#currentDay').text(today.format('dddd, MMMM D, h:mm:ss'));
+$('#currentDay').text(today.format("dddd, MMMM D YYYY, h:mm:ss"));
 
 //Update page every second so time is current
+var timeUpdated = setInterval(function () {
+  var current = moment().format("dddd, MMMM D YYYY, h:mm:ss")
+  $('#currentDay').text(current)
+},1000);
 
+//Event Listener for the save button
 $(function () {
 
   var today = dayjs();
