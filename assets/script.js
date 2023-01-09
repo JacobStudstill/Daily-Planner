@@ -8,7 +8,7 @@ var timeUpdated = setInterval(function () {
   $('#currentDay').text(current)
 },1000);
 
-//Event Listener for the save button to add date to local storage
+//Event Listener on the save button to add user text into local storage
 $(".saveBtn").on("click", function(){
   var time = $(this).parent().attr("id");
   var info = $(this).siblings(".description").val();
@@ -19,6 +19,7 @@ $(".saveBtn").on("click", function(){
   localStorage.setItem(time,info);
 })
 
+// Get information from local storage for the corresponding hours
 $("#hour-5 .description").val(localStorage.getItem("hour-5"));
 $("#hour-6 .description").val(localStorage.getItem("hour-6"));
 $("#hour-8 .description").val(localStorage.getItem("hour-8"));
