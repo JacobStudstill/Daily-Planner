@@ -8,6 +8,16 @@ var timeUpdated = setInterval(function () {
   $('#currentDay').text(current)
 },1000);
 
+//Reload the page if the hour changes
+var refresh = setInterval(function() {
+  var hourRefresh = moment().hour()
+  if(hourRefresh - hourRefresh !== 0) {
+    window.location.reload();
+  }
+},1000)
+
+
+
 //Event Listener on the save button to add user text into local storage
 $(".saveBtn").on("click", function(){
   var time = $(this).parent().attr("id");
@@ -69,12 +79,14 @@ function whatHour(){
 };
 
 //Clear the values of the planner once the hour hits 1 which would be 1:00 am the next day
-function clearValue(){
+function clearValue() {
   var resetHour = moment().hour()
   // console.log(resetHour)
   if(resetHour == 1) {
     localStorage.clear();
   }
 }
+
+
 whatHour();
 clearValue();
